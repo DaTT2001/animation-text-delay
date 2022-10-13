@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+.nav i {
+    cursor: pointer;
+}
+.outdoor {
+    background-image: url(./src/oldtrafford-afp-3474.jpeg);
+    background-size: cover;
+    aspect-ratio: 16/9;
+    box-sizing: border-box;
+    text-align: center;
+}
+.outdoor .filter {
+    background-color: rgba(40,180,133,0.8);
+    aspect-ratio: 16/9;
+}
+.nav {
+    font-size: 50px;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+.content {
+    position: relative;
+    top: 10%;
+}
+.content h5 {
+    font-size: 80px;
+    font-weight: 400;
+    letter-spacing: 30px;
+    animation: h5move;
+    animation-duration: 3s;
+}
+.content p {
+    font-size: 30px;
+    letter-spacing: 20px;
+    animation: pmove;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 25px;
+    margin-top: 50px;
+    color: black;
+    letter-spacing: 3px;
+    padding: 30px 50px;
+    background-color: white;
+    border-radius: 50px;
+    animation-duration: 3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 6s;
+    animation-name: btnmove;
+}
+@keyframes h5move {
+    0% {
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+    80% {
+        transform: translateX(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes pmove {
+    0% {
+        opacity: 0;
+        transform: translateX(300px);
+    }
+    80% {
+        transform: translateX(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes btnmove {
+    0% {
+        opacity: 0;
+        transform: translateY(300px);
+    }
+    80% {
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
